@@ -1,0 +1,7 @@
+{
+  "name": "Copy of WalaBox - Creative Toolbox",
+  "description": "A premium digital hub for creative tools including the Cyber Christmas Tree and Perler Bead Pattern Generator.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
