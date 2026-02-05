@@ -1,6 +1,6 @@
 
 import React, { useState, useRef } from 'react';
-import { ToolEntry } from '../types';
+import { ToolEntry } from '../types.ts';
 
 interface ToolCardProps {
   tool: ToolEntry & { isTeaser?: boolean };
@@ -58,7 +58,7 @@ const ToolCard: React.FC<ToolCardProps> = ({ tool, isActive }) => {
         }}
       >
         
-        {/* Shine/Reflection Layer */}
+        {/* Shine Layer */}
         <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-transparent pointer-events-none z-10" />
 
         {/* Image Section */}
@@ -69,10 +69,8 @@ const ToolCard: React.FC<ToolCardProps> = ({ tool, isActive }) => {
             className={`w-full h-full object-cover transition-transform duration-[3000ms] ease-out ${tool.isTeaser ? 'grayscale contrast-125 brightness-75' : 'scale-105 md:group-hover:scale-110'}`}
           />
           
-          {/* Gradient Overlay */}
           <div className={`absolute inset-0 transition-opacity duration-500 ${tool.isTeaser ? 'bg-black/40 opacity-70' : 'bg-gradient-to-t from-white/60 via-transparent to-white/10 opacity-70'}`} />
           
-          {/* Status Badge Over Image */}
           {(tool.isComingSoon || tool.isTeaser) && (
             <div className="absolute inset-0 flex items-center justify-center z-20">
               <div className={`px-5 md:px-8 py-2 md:py-3 backdrop-blur-3xl text-white text-[9px] md:text-[10px] font-black rounded-xl md:rounded-2xl shadow-2xl border border-white/10 tracking-[0.3em] md:tracking-[0.4em] transform -rotate-3 uppercase ${tool.isTeaser ? 'bg-black/70' : 'bg-blue-600/60'}`}>
@@ -81,14 +79,12 @@ const ToolCard: React.FC<ToolCardProps> = ({ tool, isActive }) => {
             </div>
           )}
 
-          {/* Top-left Tag */}
           <div className="absolute top-6 md:top-10 left-6 md:left-10 z-30" style={{ transform: 'translateZ(40px)' }}>
             <div className={`px-4 md:px-6 py-2 md:py-2.5 text-[8px] md:text-[10px] font-black tracking-[0.15em] md:tracking-[0.25em] text-white backdrop-blur-2xl border border-white/40 rounded-xl md:rounded-2xl uppercase shadow-2xl ${tool.isTeaser ? 'bg-gray-600/50' : (tool.isComingSoon ? 'bg-orange-600/50' : 'bg-black/50')}`}>
               {tool.tag}
             </div>
           </div>
 
-          {/* Floating Icon */}
           <div className={`absolute -bottom-6 md:-bottom-10 right-8 md:right-12 w-16 h-16 md:w-24 md:h-24 rounded-2xl md:rounded-[2rem] bg-white shadow-xl flex items-center justify-center text-3xl md:text-5xl transition-all duration-1000 border border-gray-100 z-30 ${isActive ? 'translate-y-0' : 'translate-y-4'}`} style={{ transform: 'translateZ(60px)' }}>
             {tool.icon}
           </div>

@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { LOGO_URL, TOOLS } from '../constants';
+import { LOGO_URL, TOOLS } from '../constants.tsx';
 
 const Header: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);

@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import Header from './components/Header';
-import ToolCard from './components/ToolCard';
-import { TOOLS } from './constants';
+import Header from './components/Header.tsx';
+import ToolCard from './components/ToolCard.tsx';
+import { TOOLS } from './constants.tsx';
 
 const App: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
