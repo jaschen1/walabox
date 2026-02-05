@@ -20,7 +20,7 @@ export const TOOLS: ToolEntry[] = [
     title: '拼豆图纸生成',
     description: '将你的创意瞬间像素化。只需上传图片，即可生成专业的拼豆对比图纸与配色方案，并且提供在线着色编辑的功能。',
     icon: '🎨',
-    url: 'https://walabean-v2-1-150067904792.us-west1.run.app',
+    url: 'https://bean.walabox.cn',
     color: 'from-purple-400 to-pink-500',
     tag: '创意手工',
     image: 'https://walabox-assets.oss-cn-beijing.aliyuncs.com/%E6%8D%95%E6%98%AF%E8%8E%B7.JPG'
