@@ -78,7 +78,7 @@ const App: React.FC = () => {
             </span>
             WalaBox Creative Studio
           </div>
-          <h1 className="text-4xl md:text-8xl font-black text-gray-900 mb-4 md:mb-6 leading-[1] md:leading-[0.85] tracking-tighter">
+          <h1 className="text-4xl md:text-8xl font-black text-gray-900 mb-4 md:mb-6 leading-[1.1] md:leading-[1.0] tracking-tighter">
             释放你的 <br className="hidden md:block" />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">极致灵感</span>
           </h1>
