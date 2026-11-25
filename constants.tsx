@@ -8,11 +8,11 @@ export const TOOLS: ToolEntry[] = [
   {
     id: 'x-ray-mirror',
     title: 'X-ray Mirror',
-    description: '用摄像头实时追踪面部，在画面中叠加 3D 颅骨、大脑等解剖结构。',
+    description: '用摄像头追踪面部和手势，透视颅骨、大脑、眼球和手骨，移动指尖控制透视范围。',
     icon: '💀',
     url: 'https://walabox-xray.vercel.app/',
     color: 'from-cyan-400 to-blue-600',
-    tag: '3D 解剖',
+    tag: '手势控制',
     image: new URL('./assets/x-ray-mirror.webp', import.meta.url).href
   },
   {
