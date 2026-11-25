@@ -6,6 +6,16 @@ export const LOGO_URL = "https://walabox-assets.oss-cn-beijing.aliyuncs.com/unna
 
 export const TOOLS: ToolEntry[] = [
   {
+    id: 'x-ray-mirror',
+    title: 'X-ray Mirror',
+    description: '用摄像头实时追踪面部，在画面中叠加 3D 颅骨、大脑等解剖结构。',
+    icon: '💀',
+    url: 'https://x-ray-mirror.vercel.app/',
+    color: 'from-cyan-400 to-blue-600',
+    tag: '3D 解剖',
+    image: new URL('./assets/x-ray-mirror.webp', import.meta.url).href
+  },
+  {
     id: 'cyber-christmas-tree',
     title: '赛博圣诞树',
     description: '手势控制圣诞树。上传你的照片并将其融入圣诞树中，打造个性化、温暖的节日装饰。',
@@ -24,16 +34,5 @@ export const TOOLS: ToolEntry[] = [
     color: 'from-purple-400 to-pink-500',
     tag: '创意手工',
     image: 'https://walabox-assets.oss-cn-beijing.aliyuncs.com/%E6%8D%95%E6%98%AF%E8%8E%B7.JPG'
-  },
-  {
-    id: 'new-year-fireworks',
-    title: '新年烟花',
-    description: '即刻绽放属于你的数字烟火。支持手势控制，让绚烂的烟花在指尖绽放，还可上传照片制作年度回忆录。',
-    icon: '🎆',
-    url: '#',
-    color: 'from-orange-400 to-red-600',
-    tag: '节日预告',
-    image: 'https://walabox-assets.oss-cn-beijing.aliyuncs.com/unnamed%20%2811%29.jpg',
-    isComingSoon: true
   }
 ];
