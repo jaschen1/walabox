@@ -69,24 +69,6 @@ const App: React.FC = () => {
       <Header />
       
       <main className="flex-grow flex flex-col items-center justify-center relative py-4 md:py-8 overflow-hidden">
-        {/* Hero Section */}
-        <section className="text-center px-6 mb-8 md:mb-12 z-20 pointer-events-none">
-          <div className="inline-flex items-center gap-2 px-4 md:px-6 py-2 md:py-3 rounded-full bg-white/90 backdrop-blur-xl shadow-lg border border-white/50 text-blue-600 font-black text-[8px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] mb-4 md:mb-8">
-            <span className="relative flex h-1.5 md:h-2 w-1.5 md:w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-1.5 md:h-2 w-1.5 md:w-2 bg-blue-500"></span>
-            </span>
-            WalaBox Creative Studio
-          </div>
-          <h1 className="text-4xl md:text-8xl font-black text-gray-900 mb-4 md:mb-6 leading-[1.1] md:leading-[1.0] tracking-tighter">
-            释放你的 <br className="hidden md:block" />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">极致灵感</span>
-          </h1>
-          <p className="text-gray-400 max-w-xs md:max-w-xl mx-auto text-sm md:text-lg font-bold tracking-tight opacity-80">
-            探索数字与艺术的完美融合，为每一个创意碎片提供持续动力
-          </p>
-        </section>
-
         {/* 3D Stage Container */}
         <div 
           className="relative w-full max-w-[1400px] h-[550px] md:h-[750px] flex items-center justify-center perspective-[2000px] md:perspective-[3500px]"
